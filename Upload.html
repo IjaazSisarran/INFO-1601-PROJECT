@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JIIVE | Upload</title>
+  <link href="Css/Upload.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/5acdeccc04.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="loader">
+    <div class="loadContainer">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <span class="loading">Loading...</span>
+    </div>
+  </div>
+
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="index.html"><img src="Images/Logo-1.png"></a></li>
+      <li class="item list"><a href="index.html">Home</a></li>
+      <li class="item list"><a href="Shop.html">Shop</a></li>
+      <li class="item list"><a href="Map.html">Map</a></li>
+      <li class="item list"><a href="FAQ.html">FAQ</a></li>
+      <li class="item list"><a href="About.html">About Us</a></li>
+      <li class="item list"><a href="SellerReviews.html">Reviews</a></li>
+      <li class="item list"><a href="Upload.html">Upload</a></li>
+      <li class="item button"><a href="login.html">Login</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+    </ul>
+  </nav>
+
+  <div class="heading">
+    <h1>Product Upload Form</h1>
+  </div>
+
+	<main>
+		<form id="product-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="price">Price:</label>
+			<input type="number" id="price" name="price" required>
+			
+			<label for="contact">Contact Number:</label>
+			<input type="tel" id="contact" name="contact" required>
+			
+			<label for="description">Description:</label>
+			<textarea id="description" name="description" required></textarea>
+			
+			<label for="image">Image:</label>
+			<input type="file" id="image" name="image" accept="image/*" required>
+			<img id="preview" src="#" alt="Product Image Preview">
+			
+			<button type="submit", id="submit">Submit</button>
+		</form>
+	</main>
+	<script src="Javascript/Upload.js"></script>
+</body>
+
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="Images/Logo-1.png" class="footLogo">
+      <p>We connect buyers and sellers in their community. Our website is a safe and easy platform for buying and
+        selling products locally, free for everyone to use. Support local businesses with us.</p>
+    </div>
+    <div class="col">
+      <h3>Discover <div class="underline"><span></span></div>
+      </h3>
+      <ul>
+        <li class="link"><a href="Team.html">The Team</a></li>
+      </ul>
+      <p class="email-id">zuckywuckies@gmail.com</p>
+      <h4>+1(868)-548-2271</h4>
+    </div>
+    <div class="col">
+      <h3>Links <div class="underline"><span></span></div>
+      </h3>
+      <ul>
+        <li class="link"><a href="index.html">Home</a></li>
+        <li class="link"><a href="Shop.html">Shop</a></li>
+        <li class="link"><a href="Map.html">Map</a></li>
+        <li class="link"><a href="FAQ.html">FAQ</a></li>
+        <li class="link"><a href="About.html">About Us</a></li>
+        <li class="link"><a href="SellerReviews.html">Reviews</a></li>
+        <li class="link"><a href="Upload.html">Upload</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter <div class="underline"><span></span></div>
+      </h3>
+      <form>
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" placeholder="Enter your email id" required>
+        <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">Zucky Wuckies © 2023 - ALL Rights Reserved</p>
+</footer>
+
+</html>
